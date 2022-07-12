@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int arr[10]={1,2,3,4,5,6,6,6,9,10};
+    int arr[10]={2,5,6};
     cout<<arr[0]<<endl;     //this prints a value
     cout<<&arr[4]<<endl;   //this prints the address at the given index
     cout<<arr<<endl;        //this prints the address at the 0th index
@@ -14,7 +14,8 @@ int main(){
     cout<<*arr<<endl;//prints value at 0
     cout<<*arr+1<<endl;//must print 2
     cout<<*(arr+1);
-    
+    cout<<*(arr)+1<<endl; //line 15 and line 17 are exactly the same
+    cout<<2[arr];//this is valid too
     
     
     return 0;
