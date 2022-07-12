@@ -9,7 +9,6 @@ int main(){
     }
     for (int i = 2; i <= n/2; i++)
     {
-        /* code */
         if(n%i==0){
             is_prime=false;
             break;
