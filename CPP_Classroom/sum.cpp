@@ -27,8 +27,7 @@ int main(){
 template<class T>
 T sum(T a,T b)
 {
-    T result;56
-    4
+    T result;
     result=a+b;
     return result;
 }
