@@ -15,7 +15,10 @@ int main(){
     cout<<*arr+1<<endl;//must print 2
     cout<<*(arr+1);
     cout<<*(arr)+1<<endl; //line 15 and line 17 are exactly the same
-    cout<<2[arr];//this is valid too
+    cout<<2[arr]<<endl;//this is valid too
+    cout<<"Size of arr"<<sizeof(arr)<<endl;
+    int *p=&arr[0];
+    cout<<"Size of p"<<sizeof(p);
     
     
     return 0;
