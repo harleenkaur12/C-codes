@@ -3,7 +3,7 @@ using namespace std;
 int main(){
     //NULL
     int *p;
-    int *q=NULL;
+    int *q=NULL; //if we try to derefernce a null pointer, we get segmentation error//NULL pointer also called WILD pointer
     int *r=0;
     cout<<q;
 
@@ -20,6 +20,20 @@ int main(){
 
     cout<<"The value of variable a is "<<*u<<endl;
     cout<<"The value of variable a is "<<**v<<endl;
+
+
+    //VOID POINTER
+    int var=5;//cannot be dereferenced. it doesn't know which datatype
+    char alpha='A';//8 byte space is saved using a single pointer
+    void *ptr;
+    ptr=&var;
+    cout<<(int*)ptr<<endl; //explicit typecasting
+    ptr=&alpha;
+    cout<<(char*)ptr<<endl;
+
+    //DANGLING POINTER
+    //pointer pointing to memory that has been freed
+
 
 
 
