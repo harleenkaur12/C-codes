@@ -6,6 +6,6 @@ int main(){
     cout<<"The value of enum color: "<<red<<" "<<black<<endl;
 
     cout<<"enum suit default values"<<heart<<diamond<<spade<<club;
-   
+    
     return 0;
 }
