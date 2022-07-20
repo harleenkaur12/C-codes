@@ -37,7 +37,7 @@ int main(){
 
     int final=subtotal+(subtotal*8.25/100);
 
-    cout<<"Items \t\t\t\t Qty \t Price"<<endl;
+    cout<<setw(10)<<"Items"<<setw(10)<<"Qty"<<setw(10)<<"Price"<<endl;
     cout<<"------------------------------------------------------"<<endl;
     cout<<"VCR \t "<<endl;
     cout<<"Remote Control \t"<<endl;

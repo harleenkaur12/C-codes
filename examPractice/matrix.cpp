@@ -13,10 +13,22 @@ int main(){
             for (int j = 0; j <4; j++)
             {
                 /* code */
-                cout<<arr[i][j]<<endl;
+                cout<<arr[i][j];
             }
+            cout<<endl;
             
         }
+        for (int j = 0; j < 4; j++)
+        {
+            /* code */
+            for (int i = 0; i < 3; i++)
+            {
+                /* code */
+                cout<<arr[i][j];
+            }
+            cout<<endl;
+        }
+        
         
     return 0;
 }
