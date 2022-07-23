@@ -27,7 +27,7 @@ class hero{
 
 int main(){
     hero Ramesh;
-    cout<<"Health of Ramesh is "<<Ramesh.getHealth()<<endl;  //returns some garbage value
+    cout<<"Health of Ramesh is "<<Ramesh.getHealth();  //returns some garbage value
     Ramesh.setHealth(70);
     cout<<"Health of Ramesh is "<<Ramesh.getHealth();
 
