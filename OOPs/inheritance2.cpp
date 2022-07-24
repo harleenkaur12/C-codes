@@ -14,7 +14,7 @@ class human{
         this->weight=w;
     }
 };
-class male: public human {
+class male: protected human {
     public:
     string color;
 
@@ -28,7 +28,7 @@ int main(){
 
     male m1;
     cout<<m1.height;
-    
+
     // male object1;
     // cout<<object1.age<<endl;
     // cout<<object1.color<<endl;
