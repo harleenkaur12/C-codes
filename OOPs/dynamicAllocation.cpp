@@ -46,6 +46,7 @@ int main(){
 
     cout<<"Level is "<<(*b).level<<endl; 
     cout<<"Health is "<<(*b).getHealth()<<endl; 
+    delete b;
 
     
 }

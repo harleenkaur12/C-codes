@@ -8,7 +8,6 @@ class hero{
     public:
     char *name;
     char level='A';
-    int timeToComplete;
 
     void print(){
         cout<<level<<endl;
@@ -49,29 +48,33 @@ class hero{
         this->health=temp.health;
         this->level=temp.level;
     }
-    
+    //desrtructor
+    ~hero(){
+        cout<<"Simple destructor called"<<endl;
+    }
 
 };
 
 int main(){
-    //object created statically
-    cout<<"Hi"<<endl;
-    hero  rakesh;
-    cout<<"Hello"<<endl;
-    //object created dynamically
-    hero *b=new hero;
-    cout<<"Address of rakesh is "<<&rakesh;
-    //copying objects
-    hero suresh(rakesh);
-    cout<<"Health of rakesh is "<<rakesh.getHealth();
-    cout<<"Level of rakesh is "<<rakesh.getLevel();
+    //static 
+    hero a;
 
-    cout<<"Health of suresh is "<<suresh.getHealth();
-    cout<<"Level of suresh is "<<suresh.getLevel();
-    
+    //dynamic
+    hero *b=new hero();
     delete b;
 
 
-    
-     
+
+
+
+
+
+
+
+
+
+
+
+
+    return 0;
 }
