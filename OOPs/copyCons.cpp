@@ -45,7 +45,7 @@ int main(){
     //parameterised function
         cout<<redmi.model<<" "<<redmi.year_of_manufacture<<" "<<redmi._5g_supported<<endl;
 
-    smartPhone iphone(redmi);
+    smartPhone iphone(redmi); 
     cout<<iphone.model<<" "<<iphone.year_of_manufacture<<" "<<iphone._5g_supported<<endl;
 
     return 0;
