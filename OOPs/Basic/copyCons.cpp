@@ -15,7 +15,8 @@ class hero{
         cout<<"Health is "<<health<<endl;
         cout<<"Wealth is "<<wealth<<endl;
     }
-    
+
+    hero
 
 };
 int main(){
