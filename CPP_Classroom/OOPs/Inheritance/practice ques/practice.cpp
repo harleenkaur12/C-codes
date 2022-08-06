@@ -39,10 +39,7 @@ class employee{
 };
 int main(){
     employee e1;
-    e1.takedata(1,"Harsh",5,100,100,100);
+    e1.takedata(1,"Loveleen",5,100,100,100);
     e1.showdata();
-    
-
-
     return 0;
 }
