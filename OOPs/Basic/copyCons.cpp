@@ -15,8 +15,12 @@ class hero{
         cout<<"Health is "<<health<<endl;
         cout<<"Wealth is "<<wealth<<endl;
     }
+    hero(){};
+    hero(hero &king){
+        health=king.health;
+        wealth=king.wealth;
 
-    hero
+    }
 
 };
 int main(){
