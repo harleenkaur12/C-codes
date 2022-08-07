@@ -21,12 +21,13 @@ class Hero{
     }
 
     //copy constructor
-    Hero(Hero &temp){
-        health=temp.health;
-        name=temp.name;
-        level=temp.level;
+    // Hero(Hero &temp){
+    //     health=temp.health;
+    //     name=temp.name;
+    //     level=temp.level;
 
-    }
+    // }
+
 
     void setName(char name[]){
         strcpy(this->name,name);
@@ -37,7 +38,14 @@ class Hero{
     void setLevel(int l){
         level=l;
     }
+   
 
+   //copy constructor for deep copy
+    Hero (Hero &temp){
+        char *ch=new char[strlen(temp.name)+1];
+        strcpy(ch,temp.name);
+        this->name=ch;
+        }
 
 
 
@@ -46,13 +54,16 @@ int main(){
     Hero hero1;
     hero1.setHealth(10);
     hero1.setLevel(22);
-    hero1.setName("Harleen");
+    char name[10]="Harleen";
+    
+    hero1.setName(name);
 
 Hero hero2(hero1);
 cout<<hero2.name<<endl;
 
-hero1.setName("Bani");
-cout<<hero2.name; //changing name in hero1 changed the name for hero2 as well which copied hero1 basically.
-//we have still not done deep copy XD
-    return 0;
+hero1.name[0]='g';
+cout<<"Name of hero1 "<<hero1.name<<endl;
+cout<<"Name of hero2 "<<hero2.name<<endl;
+
+return 0;
 }
