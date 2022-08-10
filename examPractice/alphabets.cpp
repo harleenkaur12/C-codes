@@ -1,22 +1,26 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
-    char i;
-    for (char i = 'a'; i <= 'z'; i++)
-    {
-        /* code */
-        cout<<i<<endl; //to print alphabets
+int findMax(int a,int b,int c,int d){
+    if(a>b && a>c && a>d){
+        return a;
     }
-    
-    char j;
-    for (char j = 'A'; j <='Z'; j++)
-    {
-        /* code */
-        cout<<int(j)<<endl; //to print ASCII values
+    if(b>a && b>c && b>d){
+        return b;
     }
-    
-    
-    
+    if(c>a && c>b && c>d){
+        return c;
+    }
+    if(d>a && d>c && d>b){
+        return d;
+    } 
 
-    return 0;
+}
+
+int main(){
+    int a;int b;int c;int d;
+    cin>>a>>b>>c>>d;
+    int maxIs= findMax(a,b,c,d);
+    cout<<maxIs;
+    
+    
 }
