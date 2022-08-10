@@ -19,6 +19,5 @@ int main(){
         /* code */
         cout<<arr[i];
     }
-    
     return 0;
 }
