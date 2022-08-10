@@ -12,7 +12,10 @@ int findUnique(int arr[],int size){
 int main(){
     int arr[5]={1,2,1,3,2};
     int x=findUnique(arr,5);
-    cout<<"The unique element is "<<x;
-    
+    cout<<"The unique element is "<<x<<endl;
+    cout<<arr<<endl;
+    int a=10;
+    int *p=&a;
+    cout<<p;
     return 0;
 }
