@@ -20,5 +20,6 @@ int main(){
     }
     cout<<"The sum of the elements of the array is "<<sum;
     
+
     return 0;
 }
