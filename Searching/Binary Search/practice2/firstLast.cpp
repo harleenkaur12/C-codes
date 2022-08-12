@@ -38,7 +38,7 @@ int firstOcc(int arr[], int n, int key){
     int end=n-1;
     int mid=start+(end-start)/2;
     int ans=-1;
-    while(start<=n){
+    while(start<=end){
         if(key==arr[mid]){
             ans=mid;
             end=mid-1;
@@ -55,7 +55,7 @@ int firstOcc(int arr[], int n, int key){
     return ans;
 }
 int main(){
-    int even[5]={1,2,2,4,5};
+    int even[5]={1,1,2,4,5};
     cout<<"The first occurence of 2 is "<<firstOcc(even,5,2);
     return 0;
 }
