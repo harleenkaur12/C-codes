@@ -54,8 +54,33 @@ int firstOcc(int arr[], int n, int key){
     
     return ans;
 }
+int lastOcc(int arr[], int n, int key){
+    int start=0;
+    int end=n-1;
+    int mid=start+(end-start)/2;
+    int ans=-1;
+    while(start<=end){
+        if(key==arr[mid]){
+        ans=mid;
+        start=mid+1;
+    }
+    else if(key>arr[mid]){
+        start=mid+1;
+    }
+    else if(key<arr[mid]){
+        end=mid-1;
+    }
+    mid=start+(end-start)/2;
+
+    }
+    return ans;
+    
+}
 int main(){
-    int even[5]={1,1,2,4,5};
-    cout<<"The first occurence of 2 is "<<firstOcc(even,5,2);
+    int even[5]={1,1,2,2,5};
+    int total=lastOcc(even,5,2)-firstOcc(even,5,2);
+    cout<<"The first occurence of 2 is "<<firstOcc(even,5,2)<<endl;
+    cout<<"The last occurence of 2 is "<<lastOcc(even,5,2)<<endl;
+    cout<<"The total number of occurences is "<<total;
     return 0;
 }
