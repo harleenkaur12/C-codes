@@ -8,7 +8,6 @@ class node{
     node(int data){};
     node(int data,node*ptr){};
 };
-
 int main(){
     node *headptr;
     node firstnode(4);
